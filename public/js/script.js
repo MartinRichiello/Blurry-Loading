@@ -15,9 +15,10 @@ function blurring() {
     
     loadText.innerText = `${load}%`;
     loadText.style.opacity = scale(load, 0, 100, 1, 0);
+    background.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
 }
 
-
+//IT TAKES VALUES FROM LOAD (0 TO 100) AND TRANSLATES THEM IN OPACITY VALUES (1 TO 0), THE SAME WITH BLUR VALUES
 const scale = (num, in_min, in_max, out_min, out_max) =>  {
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
