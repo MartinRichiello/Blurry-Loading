@@ -16,8 +16,23 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    margin:0;
+    margin: 0;
 
 
 
 }
+
+.background{
+
+    background: url("../images/li-zhang-3MeXRKCw59Q-unsplash.jpg") no-repeat center center/cover;   ;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(0px);
+    
+}   
+
+
